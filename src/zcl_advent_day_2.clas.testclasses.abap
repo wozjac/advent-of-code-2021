@@ -33,11 +33,9 @@ CLASS ltcl_unit_test IMPLEMENTATION.
       ( 'down 1' )
     ).
 
-    DATA(input_1_result) = me->cut->part_1( input_1 ).
-
     cl_abap_unit_assert=>assert_equals(
       exp = 30
-      act = input_1_result ).
+      act = me->cut->part_1( input_1 ) ).
 
   ENDMETHOD.
 
@@ -54,11 +52,9 @@ CLASS ltcl_unit_test IMPLEMENTATION.
         ( 'down 1' )    " h = 5 a = 7 d = 15
       ).
 
-    DATA(input_1_result) = me->cut->part_2( input_1 ).
-
     cl_abap_unit_assert=>assert_equals(
       exp = 75
-      act = input_1_result ).
+      act = me->cut->part_2( input_1 ) ).
 
   ENDMETHOD.
 ENDCLASS.

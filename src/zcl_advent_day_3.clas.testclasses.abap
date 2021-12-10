@@ -34,10 +34,8 @@ CLASS ltcl_unit_test IMPLEMENTATION.
     " gamma   011110001000 1928
     " epsilon 100001110111 2167
 
-    DATA(input_1_result) = me->cut->part_1( input_1 ).
-
     cl_abap_unit_assert=>assert_equals( exp = 4177976
-                                        act = input_1_result ).
+                                        act = me->cut->part_1( input_1 ) ).
 
   ENDMETHOD.
 
@@ -58,11 +56,9 @@ CLASS ltcl_unit_test IMPLEMENTATION.
       ( |01010| )
     ).
 
-    DATA(input_1_result) = me->cut->part_2( input_1 ).
-
     cl_abap_unit_assert=>assert_equals(
       exp = 230
-      act = input_1_result ).
+      act = me->cut->part_2( input_1 ) ).
 
   ENDMETHOD.
 ENDCLASS.
