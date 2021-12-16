@@ -1,4 +1,4 @@
-" https://adventofcode.com/2021/day/1
+"! <p class="shorttext synchronized">Day 1: https://adventofcode.com/2021/day/1</p>
 CLASS zcl_advent_day_1 DEFINITION
   PUBLIC
   FINAL
